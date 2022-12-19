@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,40 @@ namespace Firma_Distributie
             Form1 f = new Form1();
             f.Show();
             this.Hide();
+        }
+
+        MySqlConnection cnn;
+        static string server = "localhost";
+        static string database = "firma_distributie";
+        static string uid = "root";
+        static string password = "";
+        static string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";"
+                                        + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+        MySqlDataAdapter adapter = new MySql.Data.MySqlClient.MySqlDataAdapter();
+
+        private void Articol_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cnn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            cnn.Open();
+            String query = "INSERT INTO articol (titlu, id_furnizor, pret, tip) VALUES ('"+titlu+"', '"+id_furnizor+"', '"+pret+"', '"+tip.Text+"')";
+
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(query, cnn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Articol introdus cu succes!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            cnn.Close();
         }
     }
 }

@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.id_articol = new System.Windows.Forms.TextBox();
+            this.pret_vanzare = new System.Windows.Forms.TextBox();
+            this.tip = new System.Windows.Forms.TextBox();
+            this.titlu = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,64 +45,64 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "ID Articol";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(38, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Titlu";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(38, 142);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Pret Vanzare";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(38, 191);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(22, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "Tip";
             // 
-            // textBox1
+            // id_articol
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.id_articol.Location = new System.Drawing.Point(133, 43);
+            this.id_articol.Name = "id_articol";
+            this.id_articol.Size = new System.Drawing.Size(100, 20);
+            this.id_articol.TabIndex = 4;
             // 
-            // textBox2
+            // pret_vanzare
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.pret_vanzare.Location = new System.Drawing.Point(133, 142);
+            this.pret_vanzare.Name = "pret_vanzare";
+            this.pret_vanzare.Size = new System.Drawing.Size(100, 20);
+            this.pret_vanzare.TabIndex = 5;
             // 
-            // textBox3
+            // tip
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.tip.Location = new System.Drawing.Point(133, 191);
+            this.tip.Name = "tip";
+            this.tip.Size = new System.Drawing.Size(100, 20);
+            this.tip.TabIndex = 6;
             // 
-            // textBox4
+            // titlu
             // 
-            this.textBox4.Location = new System.Drawing.Point(133, 95);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.titlu.Location = new System.Drawing.Point(133, 95);
+            this.titlu.Name = "titlu";
+            this.titlu.Size = new System.Drawing.Size(100, 20);
+            this.titlu.TabIndex = 7;
             // 
             // button1
             // 
@@ -112,6 +112,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Adauga";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -130,10 +131,10 @@
             this.ClientSize = new System.Drawing.Size(351, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.titlu);
+            this.Controls.Add(this.tip);
+            this.Controls.Add(this.pret_vanzare);
+            this.Controls.Add(this.id_articol);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -152,10 +153,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox id_articol;
+        private System.Windows.Forms.TextBox pret_vanzare;
+        private System.Windows.Forms.TextBox tip;
+        private System.Windows.Forms.TextBox titlu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

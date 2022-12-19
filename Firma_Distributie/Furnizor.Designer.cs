@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.nume_firma = new System.Windows.Forms.TextBox();
+            this.nr_inregistrare = new System.Windows.Forms.TextBox();
+            this.CUI = new System.Windows.Forms.TextBox();
+            this.adresa = new System.Windows.Forms.TextBox();
+            this.telefon = new System.Windows.Forms.TextBox();
+            this.cont_bancar = new System.Windows.Forms.TextBox();
+            this.exemplare_primite = new System.Windows.Forms.TextBox();
+            this.exemplare_returnate = new System.Windows.Forms.TextBox();
+            this.suma_plata = new System.Windows.Forms.TextBox();
+            this.exemplare_vandute = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,80 +49,80 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.termen_plata = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // nume_firma
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.nume_firma.Location = new System.Drawing.Point(158, 39);
+            this.nume_firma.Name = "nume_firma";
+            this.nume_firma.Size = new System.Drawing.Size(100, 20);
+            this.nume_firma.TabIndex = 0;
             // 
-            // textBox2
+            // nr_inregistrare
             // 
-            this.textBox2.Location = new System.Drawing.Point(158, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.nr_inregistrare.Location = new System.Drawing.Point(158, 75);
+            this.nr_inregistrare.Name = "nr_inregistrare";
+            this.nr_inregistrare.Size = new System.Drawing.Size(100, 20);
+            this.nr_inregistrare.TabIndex = 1;
             // 
-            // textBox3
+            // CUI
             // 
-            this.textBox3.Location = new System.Drawing.Point(158, 107);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.CUI.Location = new System.Drawing.Point(158, 107);
+            this.CUI.Name = "CUI";
+            this.CUI.Size = new System.Drawing.Size(100, 20);
+            this.CUI.TabIndex = 2;
             // 
-            // textBox4
+            // adresa
             // 
-            this.textBox4.Location = new System.Drawing.Point(158, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.adresa.Location = new System.Drawing.Point(158, 147);
+            this.adresa.Name = "adresa";
+            this.adresa.Size = new System.Drawing.Size(100, 20);
+            this.adresa.TabIndex = 3;
             // 
-            // textBox5
+            // telefon
             // 
-            this.textBox5.Location = new System.Drawing.Point(158, 179);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 4;
+            this.telefon.Location = new System.Drawing.Point(158, 179);
+            this.telefon.Name = "telefon";
+            this.telefon.Size = new System.Drawing.Size(100, 20);
+            this.telefon.TabIndex = 4;
             // 
-            // textBox6
+            // cont_bancar
             // 
-            this.textBox6.Location = new System.Drawing.Point(158, 215);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 5;
+            this.cont_bancar.Location = new System.Drawing.Point(158, 215);
+            this.cont_bancar.Name = "cont_bancar";
+            this.cont_bancar.Size = new System.Drawing.Size(100, 20);
+            this.cont_bancar.TabIndex = 5;
             // 
-            // textBox7
+            // exemplare_primite
             // 
-            this.textBox7.Location = new System.Drawing.Point(158, 251);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 6;
+            this.exemplare_primite.Location = new System.Drawing.Point(158, 251);
+            this.exemplare_primite.Name = "exemplare_primite";
+            this.exemplare_primite.Size = new System.Drawing.Size(100, 20);
+            this.exemplare_primite.TabIndex = 6;
             // 
-            // textBox8
+            // exemplare_returnate
             // 
-            this.textBox8.Location = new System.Drawing.Point(158, 287);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 7;
+            this.exemplare_returnate.Location = new System.Drawing.Point(158, 287);
+            this.exemplare_returnate.Name = "exemplare_returnate";
+            this.exemplare_returnate.Size = new System.Drawing.Size(100, 20);
+            this.exemplare_returnate.TabIndex = 7;
             // 
-            // textBox11
+            // suma_plata
             // 
-            this.textBox11.Location = new System.Drawing.Point(158, 359);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 10;
+            this.suma_plata.Location = new System.Drawing.Point(158, 359);
+            this.suma_plata.Name = "suma_plata";
+            this.suma_plata.Size = new System.Drawing.Size(100, 20);
+            this.suma_plata.TabIndex = 10;
             // 
-            // textBox12
+            // exemplare_vandute
             // 
-            this.textBox12.Location = new System.Drawing.Point(158, 323);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 11;
+            this.exemplare_vandute.Location = new System.Drawing.Point(158, 323);
+            this.exemplare_vandute.Name = "exemplare_vandute";
+            this.exemplare_vandute.Size = new System.Drawing.Size(100, 20);
+            this.exemplare_vandute.TabIndex = 11;
             // 
             // label1
             // 
@@ -223,12 +223,12 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Termen de plata";
             // 
-            // dateTimePicker1
+            // termen_plata
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 396);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 23;
+            this.termen_plata.Location = new System.Drawing.Point(158, 396);
+            this.termen_plata.Name = "termen_plata";
+            this.termen_plata.Size = new System.Drawing.Size(200, 20);
+            this.termen_plata.TabIndex = 23;
             // 
             // button1
             // 
@@ -238,6 +238,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Adauga";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -256,7 +257,7 @@
             this.ClientSize = new System.Drawing.Size(536, 441);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.termen_plata);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -268,19 +269,20 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.exemplare_vandute);
+            this.Controls.Add(this.suma_plata);
+            this.Controls.Add(this.exemplare_returnate);
+            this.Controls.Add(this.exemplare_primite);
+            this.Controls.Add(this.cont_bancar);
+            this.Controls.Add(this.telefon);
+            this.Controls.Add(this.adresa);
+            this.Controls.Add(this.CUI);
+            this.Controls.Add(this.nr_inregistrare);
+            this.Controls.Add(this.nume_firma);
             this.Name = "Furnizor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Furnizor";
+            this.Load += new System.EventHandler(this.Furnizor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,16 +290,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox nume_firma;
+        private System.Windows.Forms.TextBox nr_inregistrare;
+        private System.Windows.Forms.TextBox CUI;
+        private System.Windows.Forms.TextBox adresa;
+        private System.Windows.Forms.TextBox telefon;
+        private System.Windows.Forms.TextBox cont_bancar;
+        private System.Windows.Forms.TextBox exemplare_primite;
+        private System.Windows.Forms.TextBox exemplare_returnate;
+        private System.Windows.Forms.TextBox suma_plata;
+        private System.Windows.Forms.TextBox exemplare_vandute;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -309,7 +311,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker termen_plata;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

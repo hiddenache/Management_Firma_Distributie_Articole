@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,18 @@ namespace Firma_Distributie
         {
             PunctDesfacere punctDesfacere = new PunctDesfacere();
             punctDesfacere.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Actiuni actiuni = new Actiuni();
+            actiuni.Show();
             this.Hide();
         }
     }
