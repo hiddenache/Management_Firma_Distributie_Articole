@@ -225,6 +225,7 @@
             // 
             // termen_plata
             // 
+            this.termen_plata.CustomFormat = "yyyy-MM-dd";
             this.termen_plata.Location = new System.Drawing.Point(158, 396);
             this.termen_plata.Name = "termen_plata";
             this.termen_plata.Size = new System.Drawing.Size(200, 20);

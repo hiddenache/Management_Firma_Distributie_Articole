@@ -38,6 +38,8 @@
             this.titlu = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.nrBuc = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -106,7 +108,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 246);
+            this.button1.Location = new System.Drawing.Point(27, 295);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(206, 94);
             this.button1.TabIndex = 8;
@@ -124,11 +126,29 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // nrBuc
+            // 
+            this.nrBuc.Location = new System.Drawing.Point(133, 246);
+            this.nrBuc.Name = "nrBuc";
+            this.nrBuc.Size = new System.Drawing.Size(100, 20);
+            this.nrBuc.TabIndex = 27;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(38, 249);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Nr. Bucati";
+            // 
             // PunctDesfacere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nrBuc);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.titlu);
@@ -159,5 +179,7 @@
         private System.Windows.Forms.TextBox titlu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox nrBuc;
+        private System.Windows.Forms.Label label5;
     }
 }

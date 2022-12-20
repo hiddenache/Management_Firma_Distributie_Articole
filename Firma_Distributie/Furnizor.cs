@@ -29,7 +29,7 @@ namespace Firma_Distributie
         static string server = "localhost";
         static string database = "firma_distributie";
         static string uid = "root";
-        static string password = "";
+        static string password = "dragosdb";
         static string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";"
                                         + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
         MySqlDataAdapter adapter = new MySql.Data.MySqlClient.MySqlDataAdapter();
@@ -55,12 +55,36 @@ namespace Firma_Distributie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String query = "INSERT INTO furnizor (nume_firma, nr_inregistrare, CUI, adresa, telefon, cont_bancar, exemplare_primite, exemplare_returnate, exemplare_vandute, suma_plata, terment_plata) VALUES ('" + nume_firma.Text + "', '" + nr_inregistrare.Text + "', '" + CUI.Text + "', '" + adresa.Text + "', '" + telefon.Text + "', '" + cont_bancar.Text + "','" + exemplare_primite + "', '" + exemplare_returnate + "', '" + exemplare_vandute + "', '" + suma_plata + "', '" + DateTime.Parse(termen_plata.Text) + "') ";
+            DateTime termenPlata = termen_plata.Value.Date;
+            
+            Connection();
+            String query = "INSERT INTO furnizor (nume_firma, nr_inregistrare, CUI, adresa, telefon, cont_bancar, exemplare_primite, exemplare_returnate, exemplare_vandute, suma_plata, terment_plata) VALUES (" +
+                "@nume_firma,@nr_inregistrare,@CUI,@adresa,@telefon,@cont_bancar,@exemplare_primite,@exemplare_returnate,@exemplare_vandute,@suma_plata,@terment_plata)";
+
+
+
 
             try
             {
                 MySqlCommand cmd = new MySqlCommand(query, cnn);
+                cmd.Parameters.AddWithValue("@nume_firma", nume_firma.Text);
+                cmd.Parameters.AddWithValue("@nr_inregistrare", int.Parse(nr_inregistrare.Text));
+                cmd.Parameters.AddWithValue("@CUI", CUI.Text);
+                cmd.Parameters.AddWithValue("@adresa", adresa.Text);
+                cmd.Parameters.AddWithValue("@telefon", telefon.Text);
+                cmd.Parameters.AddWithValue("@cont_bancar", cont_bancar.Text);
+                cmd.Parameters.AddWithValue("@exemplare_primite", int.Parse(exemplare_primite.Text));
+                cmd.Parameters.AddWithValue("@exemplare_returnate", int.Parse(exemplare_returnate.Text));
+                cmd.Parameters.AddWithValue("@exemplare_vandute", int.Parse(exemplare_vandute.Text));
+                cmd.Parameters.AddWithValue("@suma_plata", float.Parse(suma_plata.Text));
+                cmd.Parameters.AddWithValue("@terment_plata", termenPlata);
+
+
+
+
                 cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+
                 MessageBox.Show("Furnizor introdus cu succes!");
             }
             catch (Exception ex)

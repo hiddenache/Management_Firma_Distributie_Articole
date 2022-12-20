@@ -29,7 +29,7 @@ namespace Firma_Distributie
         static string server = "localhost";
         static string database = "firma_distributie";
         static string uid = "root";
-        static string password = "";
+        static string password = "dragosdb";
         static string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";"
                                         + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
         MySqlDataAdapter adapter = new MySql.Data.MySqlClient.MySqlDataAdapter();
@@ -38,12 +38,27 @@ namespace Firma_Distributie
         {
 
         }
+        private void Connection()
+        {
+            cnn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            try
+            {
+                cnn.Open();
+                MessageBox.Show("Connection Open ! ");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Can not open connection ! ");
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cnn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            cnn.Open();
-            String query = "INSERT INTO articol (titlu, id_furnizor, pret, tip) VALUES ('"+titlu+"', '"+id_furnizor+"', '"+pret+"', '"+tip.Text+"')";
+            Connection();
+            int idFurnizor = int.Parse(id_furnizor.Text);
+            float pretInt = float.Parse(pret.Text);
+            String query = "INSERT INTO articol (titlu, id_furnizor, pret, tip) VALUES ('"+titlu.Text+"', '"+idFurnizor+"', '"+pretInt+"', '"+tip.Text+"')";
 
             try
             {
